@@ -56,7 +56,7 @@
             var geometry, material, cube1, tex;
             var cubes1 = [];
                 
-            var dp_textures = [new THREE.TextureLoader().load( "mp_vendetta/dp1.png" ), new THREE.TextureLoader().load( "mp_vendetta/dp2.png" ), new THREE.TextureLoader().load( "mp_vendetta/dp3.png" ), new THREE.TextureLoader().load( "mp_vendetta/dp4.png" ), new THREE.TextureLoader().load( "mp_vendetta/dp5.png" ), new THREE.TextureLoader().load( "mp_vendetta/dp6.png" )];
+            var dp_textures = [new THREE.TextureLoader().load( "dp1.png" ), new THREE.TextureLoader().load( "dp2.png" ), new THREE.TextureLoader().load( "dp3.png" ), new THREE.TextureLoader().load( "dp4.png" ), new THREE.TextureLoader().load( "dp5.png" ), new THREE.TextureLoader().load( "dp6.png" )];
                 
             for(var i=0; i<num_cubes1; i++){
                 geometry = new THREE.BoxGeometry( 1, 1, 1 );
@@ -75,7 +75,7 @@
 
         /* Level 2 cubes */    
         num_cubes2 = 750;
-            var hillary_textures = [new THREE.TextureLoader().load( "mp_vendetta/hilary1.png" ), new THREE.TextureLoader().load( "mp_vendetta/hilary2.png" ), new THREE.TextureLoader().load( "mp_vendetta/hilary3.png" ), new THREE.TextureLoader().load( "mp_vendetta/hilary4.png" )];
+            var hillary_textures = [new THREE.TextureLoader().load( "hilary1.png" ), new THREE.TextureLoader().load( "hilary2.png" ), new THREE.TextureLoader().load( "hilary3.png" ), new THREE.TextureLoader().load( "hilary4.png" )];
             
             var cubes2 = [];
             for(var i=0; i<num_cubes2; i++){
@@ -96,7 +96,7 @@
 
         /* Level 3 cubes */
         num_cubes3 = 750;
-            var trump_textures = [new THREE.TextureLoader().load( "mp_vendetta/trump1.png" ), new THREE.TextureLoader().load( "mp_vendetta/trump2.png" ), new THREE.TextureLoader().load( "mp_vendetta/trump3.png" )];
+            var trump_textures = [new THREE.TextureLoader().load( "trump1.png" ), new THREE.TextureLoader().load( "trump2.png" ), new THREE.TextureLoader().load( "trump3.png" )];
             
             var cubes3 = [];
             for(var i=0; i<num_cubes3; i++){
@@ -118,10 +118,10 @@
         /* Add winning cube at the end */
             var cube4_texture;
             if(isUncommon){
-                cube4_texture = new THREE.TextureLoader().load("mp_vendetta/win2.png");
+                cube4_texture = new THREE.TextureLoader().load("win2.png");
             }
             else{
-                cube4_texture = new THREE.TextureLoader().load("mp_vendetta/win2.png");
+                cube4_texture = new THREE.TextureLoader().load("win2.png");
             }
 
             geometry = new THREE.BoxGeometry( 10, 10, 10 );
@@ -136,7 +136,7 @@
             player_geometry = new THREE.BoxGeometry( .5, .5, .5 );  
             player_material = new THREE.MeshLambertMaterial( { color: 0xf913cc, wireframe: false } );
 
-            var bernie_texture = new THREE.TextureLoader().load( "mp_vendetta/bernie.png" );
+            var bernie_texture = new THREE.TextureLoader().load( "bernie.png" );
             if(isUncommon){
                 player_material = new THREE.MeshLambertMaterial( { map: bernie_texture } );
             }
@@ -189,10 +189,10 @@
             floor_geometry = new THREE.BoxGeometry(skyBoxSize, 0, skyBoxSize);
             var floor_texture;
             if(isUncommon){
-                floor_texture = new THREE.TextureLoader().load( "mp_vendetta/UC.png" );
+                floor_texture = new THREE.TextureLoader().load( "UC.png" );
             }   
             else{
-                floor_texture = new THREE.TextureLoader().load( "mp_vendetta/dn.png" );
+                floor_texture = new THREE.TextureLoader().load( "dn.png" );
             }
             floor_material = new THREE.MeshBasicMaterial( { map: floor_texture } );
             floor_cube = new THREE.Mesh( floor_geometry, floor_material);
@@ -204,10 +204,10 @@
             ceiling_geometry = new THREE.BoxGeometry(skyBoxSize, 0, skyBoxSize);
             var ceiling_texture;
             if(isUncommon){
-                ceiling_texture = new THREE.TextureLoader().load( "mp_vendetta/UC.png" );
+                ceiling_texture = new THREE.TextureLoader().load( "UC.png" );
             }   
             else {  
-                ceiling_texture = new THREE.TextureLoader().load( "mp_vendetta/up.png" );
+                ceiling_texture = new THREE.TextureLoader().load( "up.png" );
             }
             ceiling_material = new THREE.MeshBasicMaterial( { map: ceiling_texture } );
             ceiling_cube = new THREE.Mesh( ceiling_geometry, ceiling_material);
@@ -219,10 +219,10 @@
             right_geometry = new THREE.BoxGeometry(0, skyBoxSize, skyBoxSize);  
             var right_texture;
             if(isUncommon){
-                right_texture = new THREE.TextureLoader().load( "mp_vendetta/UC.png" );
+                right_texture = new THREE.TextureLoader().load( "UC.png" );
             }   
             else {
-                right_texture = new THREE.TextureLoader().load( "mp_vendetta/rt.png" );
+                right_texture = new THREE.TextureLoader().load( "rt.png" );
             }
             right_material = new THREE.MeshBasicMaterial( { map: right_texture } );
             right_cube = new THREE.Mesh( right_geometry, right_material);
@@ -234,10 +234,10 @@
             left_geometry = new THREE.BoxGeometry(0, skyBoxSize, skyBoxSize);
             var left_texture;   
             if(isUncommon){
-                left_texture = new THREE.TextureLoader().load( "mp_vendetta/UC.png" );
+                left_texture = new THREE.TextureLoader().load( "UC.png" );
             }   
             else {
-                left_texture = new THREE.TextureLoader().load( "mp_vendetta/lf.png" );
+                left_texture = new THREE.TextureLoader().load( "lf.png" );
             }
             left_material = new THREE.MeshBasicMaterial( { map: left_texture } );
             left_cube = new THREE.Mesh( left_geometry, left_material);
@@ -250,10 +250,10 @@
             var front_texture;
             
             if(isUncommon){
-                front_texture = new THREE.TextureLoader().load( "mp_vendetta/UC.png" );
+                front_texture = new THREE.TextureLoader().load( "UC.png" );
             }
             else{
-                front_texture = new THREE.TextureLoader().load( "mp_vendetta/ft.png" );
+                front_texture = new THREE.TextureLoader().load( "ft.png" );
             }
             front_material = new THREE.MeshBasicMaterial( { map: front_texture } );
             front_cube = new THREE.Mesh( front_geometry, front_material);
