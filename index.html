@@ -352,6 +352,12 @@
                         camera.position.x+=.05;
                     }
                 }
+                if(player_cube.position.z < -160){
+                    var mode = prompt("You Win! OMFG! \n Would you like to play again? (y/n)");
+                    if(mode==="y" || mode==="Y"){
+                        location.reload();
+                    }
+                }
             };
             render();
         </script>
